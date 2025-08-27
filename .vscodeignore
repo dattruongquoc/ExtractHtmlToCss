@@ -1,13 +1,13 @@
 .vscode/**
 .vscode-test/**
 
-# Bỏ source TS - chỉ ship JS build
+# Exclude TypeScript sources — ship compiled JavaScript only
 src/**
 **/*.ts
 **/*.map
 **/tsconfig.json
 
-# Công cụ & cấu hình dev
+# Development tools & configuration
 **/.vscode-test.*
 **/eslint.config.mjs
 .gitignore
@@ -15,6 +15,6 @@ src/**
 package-lock.json
 vsc-extension-quickstart.md
 
-# (Không ignore out/**)
+# (not ignore)
 !out/**
 !media/**   
