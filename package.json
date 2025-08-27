@@ -1,9 +1,9 @@
 {
   "name": "extracthtmltocss",
-  "displayName": "extracthtmltocss",
+  "displayName": "Extract HTML to CSS",
   "description": "generative class id of element from html",
-  "version": "0.0.1",
-  "publisher": "dattq",
+  "version": "0.0.2",
+  "publisher": "TruongQuocDat",
   "engines": {
     "vscode": "^1.102.0"
   },
