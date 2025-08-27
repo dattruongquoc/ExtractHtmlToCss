@@ -63,7 +63,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://local-project/extractHtmlTocss"
+    "url": "https://github.com/dattruongquoc/ExtractHtmlToCss"
   },
   "dependencies": {
     "cheerio": "^1.1.2"
