@@ -1,8 +1,11 @@
-out/
 dist
+scripts/
+bundle_files/
+html/
+out/
 node_modules
 .vscode-test/
 *.vsix
 logic/
 .vscode/
-html/
+

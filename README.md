@@ -15,7 +15,9 @@ This extension helps you quickly generate flat CSS or nested SCSS selectors from
 2. **Run the command**
    - Press `Ctrl+Shift+P` (or `Cmd+Shift+P` on Mac) to open the Command Palette.
    - Search for and select `Extract HTML to CSS`.
-   <img src="./media/opening.gif" alt="How to use the extension" width="880" />
+
+<img src="./media/opening.gif" alt="How to use the extension" width="880" />
+
 3. **Choose the HTML source file**
    - A quick pick menu will appear. Select the HTML file you want to extract selectors from.
 4. **Enter the root selector**
@@ -43,9 +45,11 @@ If you enter `.container .card` as the root selector, the extension will generat
 ## Configuration
 - **Ignore Classes:** You can customize the ignore list in the source code (`IGNORE_CLASS_PATTERNS`). Classes matching these patterns will not be included in the output.
 - **Step01** go to Extensions -> extracthtmltocss -> select setting
+
 <img src="./media/setting_img01.png" alt="How to setting ignore classes of the extension: step01" width="880" />  
 
 - **Step02** edit ignore classes to hide when extract css (the classes are ignored should the tag for text when responsive layout) 
+
 <img src="./media/setting_img02.png" alt="How to setting ignore classes of the extension: step02" width="880" />  
 ## Requirements
 - Works with any workspace containing HTML and CSS/SCSS files.

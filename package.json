@@ -41,13 +41,14 @@
     }
   },
   "scripts": {
-    "vscode:prepublish": "npm run compile",
+    "vscode:prepublish": "npm run build",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
     "pretest": "npm run compile && npm run lint",
     "lint": "eslint src",
     "test": "vscode-test",
-    "package": "npx @vscode/vsce package --verbose"
+    "build": "node scripts/build.mjs",
+    "package": "npm run build && vsce package"
   },
   "devDependencies": {
     "@types/cheerio": "^1.0.0",
@@ -58,6 +59,7 @@
     "@typescript-eslint/parser": "^8.39.0",
     "@vscode/test-cli": "^0.0.11",
     "@vscode/test-electron": "^2.5.2",
+    "esbuild": "^0.25.9",
     "eslint": "^9.32.0",
     "typescript": "^5.9.2"
   },
@@ -70,7 +72,11 @@
   },
   "icon": "media/icon.png",
   "screenshots": [
-    { "path": "media/setting_img01.png" },
-    { "path": "media/setting_img02.png" }
+    {
+      "path": "media/setting_img01.png"
+    },
+    {
+      "path": "media/setting_img02.png"
+    }
   ]
 }

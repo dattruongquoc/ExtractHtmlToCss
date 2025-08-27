@@ -1,20 +1,33 @@
 .vscode/**
 .vscode-test/**
+html/
+logic/
+media/**  
+CHANGELOG.md
+
 
 # Exclude TypeScript sources — ship compiled JavaScript only
 src/**
 **/*.ts
 **/*.map
 **/tsconfig.json
+eslint.config.* 
+.eslintrc*
+.prettier*
+*.code-workspace
 
 # Development tools & configuration
+scripts/**
+node_modules/**
 **/.vscode-test.*
 **/eslint.config.mjs
 .gitignore
 .yarnrc
 package-lock.json
+package.json
 vsc-extension-quickstart.md
+out/test/**
+out/extension.js.map
 
 # (not ignore)
-!out/**
-!media/**   
+!media/icon.png
