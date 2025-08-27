@@ -57,6 +57,7 @@ If you enter `.container .card` as the root selector, the extension will generat
 
 ## Support
 If you encounter issues or have suggestions, feel free to open an issue or contribute to the project.
+contact: truongquocdat100696@gmail.com
 
 ## Author
 Dat TQ
