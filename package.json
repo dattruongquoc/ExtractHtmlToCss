@@ -1,0 +1,76 @@
+{
+  "name": "extracthtmltocss",
+  "displayName": "extracthtmltocss",
+  "description": "generative class id of element from html",
+  "version": "0.0.1",
+  "publisher": "dattq",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onCommand:extractHtmlTocss",
+    "onLanguage:html"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extractHtmlTocss",
+        "title": "Extract HTML to CSS"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "Extract HTML to CSS/SCSS",
+      "properties": {
+        "extracthtmltocss.ignoreClassPatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [
+            "br_*",
+            ".br_*"
+          ],
+          "description": "List of class patterns to ignore"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test",
+    "package": "npx @vscode/vsce package --verbose"
+  },
+  "devDependencies": {
+    "@types/cheerio": "^1.0.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@types/vscode": "^1.102.0",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.32.0",
+    "typescript": "^5.9.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://local-project/extractHtmlTocss"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2"
+  },
+  "icon": "media/icon.png",
+  "screenshots": [
+    { "path": "media/setting_img01.png" },
+    { "path": "media/setting_img02.png" }
+  ]
+}

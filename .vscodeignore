@@ -1,0 +1,20 @@
+.vscode/**
+.vscode-test/**
+
+# Bỏ source TS - chỉ ship JS build
+src/**
+**/*.ts
+**/*.map
+**/tsconfig.json
+
+# Công cụ & cấu hình dev
+**/.vscode-test.*
+**/eslint.config.mjs
+.gitignore
+.yarnrc
+package-lock.json
+vsc-extension-quickstart.md
+
+# (Không ignore out/**)
+!out/**
+!media/**   
