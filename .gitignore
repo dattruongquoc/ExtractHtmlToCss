@@ -8,6 +8,7 @@ node_modules
 *.vsix
 logic/
 .vscode/
+.gitignore
 .vscode-test.mjs
 .vscodeignore
 CHANGELOG.md
