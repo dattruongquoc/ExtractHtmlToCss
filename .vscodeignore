@@ -1,8 +1,10 @@
 .vscode/**
 .vscode-test/**
 html/
+instruct_bundle_files/
 logic/
 media/**  
+
 CHANGELOG.md
 
 
