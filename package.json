@@ -1,7 +1,7 @@
 {
   "name": "extracthtmltocss",
   "displayName": "Extract HTML to CSS",
-  "description": "generative class id of element from html",
+  "description": "Generative class/id of element from html",
   "version": "0.0.2",
   "publisher": "TruongQuocDat",
   "engines": {
