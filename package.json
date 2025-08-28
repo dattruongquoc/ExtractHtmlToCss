@@ -2,7 +2,7 @@
   "name": "extracthtmltocss",
   "displayName": "Extract HTML to CSS",
   "description": "Generative class/id of element from html",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "TruongQuocDat",
   "engines": {
     "vscode": "^1.70.0"
