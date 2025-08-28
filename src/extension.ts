@@ -1,3 +1,8 @@
+import * as vscode from "vscode";
+import { CheerioAPI, load as loadHtml } from "cheerio";
+import type { Element } from "domhandler";
+import * as path from "path";
+import * as fs from "fs/promises";
 //fix custom class ignore from setting
 const IGNORE_CLASS_PATTERNS: string[] = vscode.workspace.getConfiguration("extracthtmltocss").get("ignoreClassPatterns", ["br_*", ".br_*"]);
 
@@ -13,11 +18,7 @@ function globToRegExp(glob: string): RegExp {
 function isIgnoredClass(cls: string): boolean {
   return IGNORE_CLASS_PATTERNS.some((pat) => globToRegExp(pat).test(cls));
 }
-import * as vscode from "vscode";
-import { CheerioAPI, load as loadHtml } from "cheerio";
-import type { Element } from "domhandler";
-import * as path from "path";
-import * as fs from "fs/promises";
+
 
 /**
   * Rules for selecting the display selector:
